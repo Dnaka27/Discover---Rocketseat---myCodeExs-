@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+</head>
+<body>
+    <table>
+
+        <caption>Pessoas por idade</caption>
+
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Idade</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Diogo</td>
+                <td>19</td>
+            </tr>
+            <tr>
+                <td>Diego</td>
+                <td>20</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>Total</td>
+                <td>2 pessoas</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <hr>
+
+    <table>
+        <caption>Produtos produzido x Vendidos por loja</caption>
+
+        <colgroup>
+            <col>
+            <col span="2" style="background-color:aqua">
+            <col span="2" style="background-color: orangered">
+        </colgroup>
+
+        <thead>
+            <tr>
+                <th rowspan="2"></th>
+                <th colspan="2" scope="colgroup">Afonso Pena</th>
+                <th colspan="2" scope="colgroup">Antonia Pereira</th>
+            </tr>
+
+            <tr>
+                <th scope="col">Produzidos</th>
+                <th scope="col">Vendidos</th>
+                <th scope="col">Produzidos</th>
+                <th scope="col">Vendidos</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">Vassouras</th>
+                <th>50</th>
+                <th>30</th>
+                <th>20</th>
+                <th>20</th>
+            </tr>
+
+            <tr>
+                <th scope="row">Baldes</th>
+                <th>10</th>
+                <th>10</th>
+                <th>30</th>
+                <th>25</th>
+            </tr>
+        </tbody>
+        <tfoot></tfoot>
+    </table>
+
+</body>
+</html>
